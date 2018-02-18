@@ -65,7 +65,7 @@ class Moirai(object):
             with open(self.api_config_file) as api_config_fd:
                 self.api_config = yaml.load(api_config_fd)
         except IOError:
-            print "Missing API config file, exiting"
+            print ("Missing API config file, exiting")
             raise
         # Data_queue will enqueue tuples containing the items
         # service-name, plan and server list
